@@ -15,7 +15,7 @@ def upgrade_screen(self):
 	self.canvas.create_text(50,50, text=['coins:' +str(self.coins)], font='Arial 15 bold',tags='coin_text')
 	self.canvas.create_text(300, 50, text='cost of upgrade: 70' , font='Arial 15 bold')
 
-	button = tkinter.Button(width=12, height=1, text='Home_screen', font='Arial 15 bold', command=self.Start)
+	button = tkinter.Button(width=12, height=1, text='Home_screen', font='Arial 8 bold', command=self.Start)
 	button.place(x=300, y=680, anchor="c")
 	self.deletableButtons.append(button)
 
@@ -27,7 +27,7 @@ def upgrade_screen(self):
 	]
 	for i in range(4):
 		self.canvas.create_text(self.buttonXPositions[i], 630, text='locked', tags='locked4')
-		button = tkinter.Button(width=7, height=1, text='plane' + str(i + 1), font='Arial 15 bold', command=commands[i])
+		button = tkinter.Button(width=8, text='plane' + str(i + 1), font='Arial 8 bold', command=commands[i])
 		button.place(x=self.buttonXPositions[i], y=650, anchor="c")
 
 		self.deletableButtons.append(button)
@@ -41,7 +41,7 @@ def upgrade_screen(self):
 
 	for i in range(4):
 		self.canvas.create_text(self.buttonXPositions[i], 530, text='locked', tags='locked3')
-		button = tkinter.Button(width=7, height=1, text='shield' + str(i + 1), font='Arial 15 bold', command=shield_commands[i])
+		button = tkinter.Button(width=8, height=1, text='shield' + str(i + 1), font='Arial 8 bold', command=shield_commands[i])
 		button.place(x=self.buttonXPositions[i], y=550, anchor="c")
 		self.deletableButtons.append(button)
 
@@ -54,7 +54,7 @@ def upgrade_screen(self):
 	]
 	for i in range(4):
 		self.canvas.create_text(self.buttonXPositions[i], 430, text='locked', tags='locked2')
-		button = tkinter.Button(width=7, height=1, text='EN', font='Arial 15 bold', command=endurance[i])
+		button = tkinter.Button(width=8, height=1, text='Endurance', font='Arial 8 bold', command=endurance[i])
 		button.place(x=self.buttonXPositions[i], y=450, anchor="c")
 		self.deletableButtons.append(button)
 
@@ -67,7 +67,7 @@ def upgrade_screen(self):
 
 	for i in range(4):
 		self.canvas.create_text(self.buttonXPositions[i], 330, text='locked', tags='locked1')
-		button = tkinter.Button(width=7, height=1, text='N.O.S.', font='Arial 15 bold', command=max_number[i])
+		button = tkinter.Button(width=8, height=1, text='shi. to use', font='Arial 8 bold', command=max_number[i])
 		button.place(x=self.buttonXPositions[i], y=350, anchor="c")
 		self.deletableButtons.append(button)
 

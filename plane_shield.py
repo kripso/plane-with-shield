@@ -115,7 +115,7 @@ class game():
 
 		self.canvas.create_text(300, 600, text=['coins:' + str(self.coins)], font='Arial 30 bold', tags='coin_text')
 
-		button = tkinter.Button (width=20, height=7,  text='Start the Game', font='Arial 40 bold', activeforeground='#1010D2', command=self.hra)
+		button = tkinter.Button (width=15, height=3,  text='Start the Game', font='Arial 20 bold', activeforeground='#1010D2', command=self.hra)
 		button.place (x=300, y=250, anchor="c")
 		self.deletableButtons.append(button)
 
@@ -127,7 +127,7 @@ class game():
 		upgrade_screen(self)
 
 	def side_buttons(self):
-		button = tkinter.Button (width=7,height=1,  text='Nová hra', font= 'Arial 20 bold', activeforeground= '#1010D2',fg='#C63B3B', command= self.New_game)
+		button = tkinter.Button (width=9,height=1,  text='Nová hra', font= 'Arial 10 bold', activeforeground= '#1010D2',fg='#C63B3B', command= self.New_game)
 		button.place (x=551, y=self.buttonYpositions[0], anchor="c")
 		self.deletableButtons.append(button)
 
@@ -137,7 +137,7 @@ class game():
 			self.lvl3click
 		]
 		for i in range(3):
-			button = tkinter.Button (width=7,height=1,  text='lvl' + str(i+1), font= 'Arial 20 bold', activeforeground= '#1010D2', command = lvls[i])
+			button = tkinter.Button (width=9,height=1,  text='lvl' + str(i+1), font= 'Arial 10 bold', activeforeground= '#1010D2', command = lvls[i])
 			button.place(x=551, y=self.buttonYpositions[i+1], anchor="c")
 			self.deletableButtons.append(button)
 			
